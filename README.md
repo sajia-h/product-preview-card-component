@@ -12,7 +12,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -27,12 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Solution (Desktop)](/screenshot.png)
+![Solution (Mobile)](/screenshot2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/sajia-h/product-preview-card-component.git)
+- Live Site URL: [Add live site URL here](https://sajia-h.github.io/product-preview-card-component/)
 
 ## My process
 
@@ -41,39 +41,47 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to optimise screens for certain widths. The following CSS made it possible to manipulate the image and text of the product card when the screen is smaller than 601px;
 
-To see how you can add code snippets, see below:
+```css
+@media only screen and (max-width: 601px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+  .product-preview-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .product-img img {
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+  }
+  .attribution {
+    position: relative;
+    bottom: unset;
+    margin-top: 20px;
+  }
+}
+```
+I also learned how to use '<source>' to set min and max widths of an image using HTML:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+ <source
+          media="(min-width: 601px)"
+          srcset="./images/image-product-desktop.jpg">
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I still need to consolidate mobile-first workflow and better understand how to using ```css @media only screen ```
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Sajia](Coming soon)
+- Frontend Mentor - @sajia-h
