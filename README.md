@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sajia-h/product-preview-card-component.git)
-- Live Site URL: [Add live site URL here](https://sajia-h.github.io/product-preview-card-component/)
+- Solution URL: [https://github.com/sajia-h/product-preview-card-component.git]
+- Live Site URL: [https://sajia-h.github.io/product-preview-card-component/]
 
 ## My process
 
