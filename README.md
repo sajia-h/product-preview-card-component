@@ -7,6 +7,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,7 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
+### Desktop
+
 ![Solution (Desktop)](/screenshot.png)
+
+### Mobile
+
 ![Solution (Mobile)](/screenshot2.png)
 
 ### Links
